@@ -1,0 +1,48 @@
+
+name: Card Suggestion
+description: Suggest a new Terraria card for ROUNDS
+title: "[CARD IDEA] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for a Terraria card?
+        Share it here!
+
+  - type: input
+    id: card-name
+    attributes:
+      label: Terraria Item or Ability
+      placeholder: e.g. Eye of Cthulhu, Zenith, Star Cannon
+    validations:
+      required: true
+
+  - type: dropdown
+    id: card-type
+    attributes:
+      label: Card Type
+      options:
+        - Weapon
+        - Ammunition
+        - Accessory
+        - Armour
+        - Summon
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: ability
+    attributes:
+      label: How should it work?
+      description: Describe the effects or abilities.
+      placeholder: Explain your card idea...
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Information
+      description: Optional images, references or ideas.
