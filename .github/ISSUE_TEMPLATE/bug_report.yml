@@ -1,0 +1,61 @@
+
+name: Bug Report
+description: Report a problem with Terraria Cards for ROUNDS
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Terraria Cards!
+        Please provide as much detail as possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug.
+      placeholder: Tell us what went wrong...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: game-mode
+    attributes:
+      label: Game Mode
+      options:
+        - Single-player
+        - Multiplayer (Host)
+        - Multiplayer (Client)
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: input
+    id: card
+    attributes:
+      label: Affected Card
+      placeholder: e.g. Last Prism, Terra Blade
+
+  - type: input
+    id: version
+    attributes:
+      label: Mod Version
+      placeholder: e.g. 0.1.0
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we make this happen again?
+      placeholder: |
+        1. Start a match
+        2. Pick a card
+        3. Describe what happens
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or Logs
+      description: Attach screenshots or error logs here.
